@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';">
+    <title>Bouncing Circle Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-info-panel">
+            <p id="gameStatus">Game Status: Paused</p>
+            <p id="circleSpeed">Circle Speed: 2</p>
+        </div>        
+        <canvas id="gameCanvas"></canvas>
+        <div id="controls">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="resumeBtn" disabled>Resume</button>
+            <button id="increaseSpeedBtn" disabled>Increase Speed</button>
+            <button id="decreaseSpeedBtn" disabled>Decrease Speed</button>
+            <button id="restartBtn" disabled>Restart</button>
+        </div>
+    </div>
+    <script type="module" src="/dist/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #97ccf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    position: relative;
+}
+
+canvas {
+    border: 2px solid #0095DD;
+    background-color: #ece6e6;
+    margin-bottom: 20px;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    background-color: #0095DD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #007bb5;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 150, 221, 0.8);
+}
+
+button:disabled {
+    background-color: #d3d3d3;
+    color: #7f7f7f;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.6;
+    transform: none;
+}
+
+button:active {
+    background-color: #006699;
+    transform: scale(0.98);
+}
+
+#startBtn {
+    background-color: #28a745;
+}
+
+#startBtn:hover {
+    background-color: #218838;
+}
+
+#pauseBtn {
+    background-color: #ffc107;
+}
+
+#pauseBtn:hover {
+    background-color: #e0a800;
+}
+
+#increaseSpeedBtn {
+    background-color: #17a2b8;
+}
+
+#increaseSpeedBtn:hover {
+    background-color: #138496;
+}
+
+#decreaseSpeedBtn {
+    background-color: #dc3545;
+}
+
+#decreaseSpeedBtn:hover {
+    background-color: #c82333;
+}
+
+#restartBtn {
+    background-color: #007bff;
+}
+
+#restartBtn:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #d3d3d3;
+    color: #7f7f7f;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.6;
+}
+
+#game-info-panel {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 800px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#game-info-panel p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    #controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
